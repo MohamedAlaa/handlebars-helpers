@@ -30,14 +30,20 @@ Handlebars.registerHelper('image_tag', function(src, attr, options) {
 
 ### Usage
 
-{{{image_tag '/assets/icon.png' '{"height": 48, "width": 48, "cssClass": "business-logo", "alt": "Edit Entry"}'}}}
+```
+{{{image_tag '/assets/icon.png' '{"height": 48, "width": 48, "cssClass": "media", "alt": "Edit Entry"}'}}}
+```
 
+### Output
 
 ```
-<img src="/assets/icon.png" height="48" width="48" class="business-logo" alt="Edit Entry">
+<img src="/assets/icon.png" height="48" width="48" class="media" alt="Edit Entry">
 ```
 
 ### What's Next?
+
+I have a plan to extend these helpers to support the following output. If you think you can help please fork the branch and once you finish your changed make a pull request.
+
 
 **A**	[audio_tag](#audio_tag), [auto_discovery_link_tag](#auto_discovery_link_tag)
 
@@ -48,3 +54,8 @@ Handlebars.registerHelper('image_tag', function(src, attr, options) {
 **S**	[stylesheet_link_tag](#stylesheet_link_tag)
 
 **V**	[video_tag](#video_tag)
+
+
+#### Thanks,
+
+[Mohamed Alaa](http://twitter.com/MohammedAlaa)
